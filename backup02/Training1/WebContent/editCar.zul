@@ -1,0 +1,18 @@
+<?page title="editCar" contentType="text/html; charset=UTF-8"?>
+<zk>
+<window id="modalDialog" title="editCar" border="normal" apply="tutorial.UpdateCarModalDialogController">
+New Content Here!
+<vlayout>
+		<label id="msg"> ID: </label>
+	    Model: <textbox id="model" hflex="1" constraint="no empty"/>
+		Make :<textbox id="make" hflex="1" constraint="no empty"/>
+		<image id="img"/>
+		Upload file:
+		<fileupload id="file" label = "Upload" onUpload="img.setContent(event.media)"/>
+		<textbox id="preview" hflex="1" disabled="true"/>
+		Description :<textbox id="description" hflex="1" />
+		Price :<textbox id="price" hflex="1" />
+        <button id="updateCarBtn" hflex="1" label="Update Car"/>
+	</vlayout>
+</window>
+</zk>

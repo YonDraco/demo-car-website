@@ -1,0 +1,40 @@
+<?init class="org.zkoss.zk.ui.util.Composition"
+arg0="/template/layout.zul"?>
+
+
+<zk>
+<vlayout  self="@define(content)">
+	<listbox self="@define(content)" id="carListbox" mold="paging" pageSize="3" emptyMessage="No car found in the result" apply="tutorial.NissanController">
+		<template name="model">
+			<listitem>
+				<listcell>
+			<image src="${each.preview}" width ="100px"/>
+			    </listcell>
+			    <listcell>
+			    	<vlayout hflex="1">
+			<label value="${each.model}" />
+			<label value="${each.make}" />
+			<label value="${each.price}" />
+			<label value="${each.description}"/>
+				</vlayout>
+				</listcell>
+				</listitem>
+				</template>
+				</listbox>
+				
+		<hlayout id="carDetail" style="margin-top:20px" width="100%" visible="false">
+		<image id="previewImage" width="250px" />
+		<vlayout hflex="1">
+			<label id="modelLabel" />
+			<label id="makeLabel" />
+			<label id="priceLabel" />
+			<label id="descriptionLabel" />
+			<a id="back" href="/home.zul" label=" Quay lai" />
+		</vlayout>
+	</hlayout>
+	</vlayout>
+</zk>
+					
+
+
+

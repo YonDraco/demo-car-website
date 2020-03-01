@@ -1,0 +1,79 @@
+<style><![CDATA[
+.header {
+    background-color: #165379;
+    border-bottom: 1px solid #454545;
+    color: white;
+    padding-left: 75px;
+}
+.header-bar {
+    height: 12px
+}
+.header-title1 {
+    color: white;
+    font-family: Tahoma;
+    font-size: 22px;
+    font-weight: bold;
+}
+.header-title2 {
+    color: #efefef;
+    font-family: Georgia;
+    font-size: 14px;
+    font-style: italic;
+}
+.center-left {
+    border-left: 1px solid #CFCFCF;
+    padding: 8px;
+}
+.center-left-inner {
+    border-right: 1px solid #CFCFCF;
+    color: #6f6f6f;
+}
+.center-right {
+    border-right: 1px solid #CFCFCF
+}
+.sidebar-title {
+    font-size: 14px;
+    font-weight: bold;
+}
+.sidebar-bar {
+    border-top: 1px dotted gray;
+    margin-right: 5px;
+    margin-top: 15px;
+}
+.content-date {
+    color: #999999;
+    font-family: 'Trebuchet MS',Trebuchet;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+}
+.content-title {
+    color: #015182;
+    font-family: 'Trebuchet MS',Trebuchet;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 30px;
+    text-decoration: none;
+}
+.content-title:hover {
+    text-decoration: underline
+}
+.content-desc {
+    color: gray;
+    font-family: 'Trebuchet MS',Trebuchet;
+    font-size: 14px;
+    white-space: normal;
+}
+.content-more {
+    color: gray;
+    font-family: 'Trebuchet MS',Trebuchet;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: bold;
+}
+.footer {
+    background-color: #165379;
+    border-top : 1px solid gray;
+    color: #EFEFEF;
+    text-align: center;
+}
+]]></style>

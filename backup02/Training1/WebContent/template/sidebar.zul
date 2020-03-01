@@ -1,0 +1,38 @@
+<vlayout xmlns:h="native" vflex="1">
+	<label class="sidebar-title" value="ABOUT" />
+	<a href="http://www.zkoss.org/support/about" target="_zkdemo" image="/widgets/composite/template_pattern/img/press_zklogo3.png" />
+	<separator class="sidebar-bar" />
+
+	<label class="sidebar-title" value="ARCHIVES" />
+	<h:ul>
+		<h:li>August 2012</h:li>
+		<h:li>April 2012</h:li>
+		<h:li>February 2012</h:li>
+		<h:li>January 2012</h:li>
+		<h:li>November 2011</h:li>
+		<h:li>October 2011</h:li>
+		<h:li>September 2011</h:li>
+	</h:ul>
+	<separator class="sidebar-bar" />
+	<label class="sidebar-title" value="BLOGROLL" />
+	<h:ul>
+		<h:li><a href="http://www.zkoss.org">ZK WEBSITE</a></h:li>
+		<h:li><a href="http://www.zkoss.org/documentation">ZK Doc</a></h:li>
+		<h:li>ZK STYLE GUIDE</h:li>
+		<h:li>ZK SANDBOX</h:li>
+		<h:li>ZK DEMO</h:li>		
+	</h:ul>
+	<separator class="sidebar-bar" />
+
+
+	<label class="sidebar-title" value="SEARCH" />
+	<hlayout>
+		<textbox width="110px" id="kw"></textbox>
+		<button id="sb" label="Go">
+		<attribute name="onClick"><![CDATA[
+		  sb.setHref("/home.zul?type="+kw.getValue());
+	]]>
+	</attribute>
+	</button>
+	</hlayout>
+</vlayout>

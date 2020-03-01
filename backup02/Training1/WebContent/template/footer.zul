@@ -1,0 +1,4 @@
+<vlayout>
+	<label value="This blog is powered by ZK ${desktop.webApp.version}" />
+	<label value="Copyright © 2005-2011 Potix Corporation. All rights reserved." />
+</vlayout>

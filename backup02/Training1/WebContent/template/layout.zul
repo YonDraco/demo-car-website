@@ -1,0 +1,31 @@
+<zk>
+	<style><![CDATA[
+	  .fixed-center .header {
+	    padding-left: 10px;
+	  }
+	  .fixed-center .center-left,
+	  .fixed-center .center-right {
+	    border: none;
+	  }
+	  .fixed-center .center {
+	    border: 1px solid #CFCFCF;
+	  }
+	]]></style>
+	<include id="includeStyle" src="style/default.zul" />
+	<hlayout width="100%" height="900px">
+		<div hflex="1"></div>
+		<div hflex="6" vflex="1" class="fixed-center">
+			<include vflex="2" class="header" src="template/header.zul" />
+			<hlayout vflex="7" class="center">
+				<div vflex="1" hflex="3" class="center-left">
+					<include src="template/sidebar.zul" class="center-left-inner" />
+				</div>
+				<div vflex="1" hflex="7" class="center-right" self="@insert(content)">
+					<!-- <include src="content.zul" /> -->
+				</div>
+			</hlayout>
+			<include vflex="1" class="footer" src="template/footer.zul" />
+		</div>
+		<div hflex="1"></div>
+	</hlayout>
+</zk>

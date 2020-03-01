@@ -1,0 +1,38 @@
+<?init class="org.zkoss.zk.ui.util.Composition"
+arg0="/template/layout.zul"?>
+<window title="Search" width="600px" border="normal" self="@define(content)"
+	apply="tutorial.SearchController">
+	<hbox align="center">
+		Keyword:
+		<textbox id="keywordBox" />
+		<button id="searchButton" label="Search" image="/img/search.png" />
+		<button id="addButton" label="Add"/>
+	</hbox>
+	<listbox id="carListbox" rows="3" emptyMessage="No car found in the result">
+		<listhead>
+			<listheader label="Model" />
+			<listheader label="Make" />
+			<listheader label="Price" width="20%"/>
+		</listhead>
+		<template name="model">
+			<listitem>
+				<listcell label="${each.model}"></listcell>
+				<listcell label="${each.make}"></listcell>
+				<listcell>$<label value="${each.price}" /></listcell>
+				<listcell>
+					<button label="Edit" forward="onClick=carListbox.onEdit" id="Edit${each.id}"/>
+					<button label="Delete" forward="onClick=carListbox.onDelete" id= "Delete${each.id}"/>
+				</listcell>
+			</listitem>
+		</template>
+	</listbox>
+	<hlayout style="margin-top:20px" width="100%">
+		<image id="previewImage" width="250px" />
+		<vlayout hflex="1">
+			<label id="modelLabel" />
+			<label id="makeLabel" />
+			<label id="priceLabel" />
+			<label id="descriptionLabel" />
+		</vlayout>
+	</hlayout>
+</window>

@@ -1,0 +1,14 @@
+
+<window width="60%" id="modalDialog" title="INSERT CAR" border="normal" apply="tutorial.AddCarModalDialogController">
+	<vlayout>
+		Model: <textbox id="model" hflex="1" constraint="no empty"/>
+		Make :<textbox id="make" hflex="1" constraint="no empty"/>
+		<image id="img"/>
+		Upload file:
+		<fileupload label = "Upload" onUpload = "img.setContent(event.media)"/>
+		<!-- preview :<textbox id="preview" hflex="1" constraint="no empty"/> -->
+		Description :<textbox id="description" hflex="1" />
+		Price :<textbox id="price" hflex="1" />
+		<button id="addCarBtn" label="Add Car"/>
+	</vlayout>
+</window>

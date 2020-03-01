@@ -1,0 +1,20 @@
+<vlayout>
+
+	<separator class="header-bar" />
+	<label class="header-title1" value="Another ZK Blog" />
+	<label class="header-title2" value="ZK, Open Source, Ajax, Java, Web developer, Driect RIA, High Speed Low Drag" />
+
+
+  <menubar id="menubar" width="100%" autodrop="true">
+	 <menuitem label="Home" href="/home.zul"/>
+	 
+	 
+	 <menu label="Car Legend">
+	 	<menupopup>
+	 		<menuitem label="Nissan" href="/nissan.zul"/>
+	 		<menuitem label="Toyota" href="/home.zul?type=toyota"/>
+	 	</menupopup>
+	 </menu>
+	 <menuitem label="Car Management" href="/searchMvc.zul"/>
+  </menubar>
+</vlayout>
